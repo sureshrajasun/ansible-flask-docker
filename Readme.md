@@ -12,6 +12,17 @@
 
 - flask run --host 0.0.0.0 --port 8090
 
+** Save the Image **
+
+docker save -o ./fask-ansible-docker.tar flaskapi:latest
+
+** Loand Docker Image** 
+
+docker load < fask-ansible-docker.tar
+
+**To Find the process of Port**
+
+lsof -P -i :8090
 
 **References**
 
