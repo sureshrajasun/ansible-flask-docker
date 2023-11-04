@@ -1,19 +1,23 @@
-# To Build and Deploy
+# Flask Api to call the Ansible Playbook in Docker Container
 
-To Biuld Image:
+**To Build Image:**
 
-docker build -t flaskapi:latest .
+- docker build -t flaskapi:latest .
 
-To Run the app
-docker run -p 8090:8090 flaskapi:latest & 
+**To Run the app:**
+
+- docker run -p 8090:8090 flaskapi:latest & 
+
+**To Change the Port Number**
+
+- flask run --host 0.0.0.0 --port 8090
 
 
-To Change the Port Number
-flask run --host 0.0.0.0 --port 8090
+**References**
 
+- https://hackmd.io/@the-ansible-book/B1y5tXers
 
-Reference
-https://hackmd.io/@the-ansible-book/B1y5tXers
-https://medium.com/@prateekbansalind/python-programs-4-dockerizing-your-flask-api-for-seamless-deployments-28c1842a92cb
-https://sddcadvisors.com/running-ansible-playbook-from-python-code/
+- https://medium.com/@prateekbansalind/python-programs-4-dockerizing-your-flask-api-for-seamless-deployments-28c1842a92cb
+
+- https://sddcadvisors.com/running-ansible-playbook-from-python-code/
 
