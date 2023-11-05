@@ -1,30 +1,32 @@
-# Flask Api to call the Ansible Playbook in Docker Container
+#Flask Api to call the Ansible Playbook in Docker Container
 
-**To Build Image:**
+>**To Build Image:**
 
-- docker build -t flaskapi:latest .
+- _docker build -t flaskapi:latest ._
 
-**To Run the app:**
+>**To Run the app:**
 
-- docker run -p 8090:8090 flaskapi:latest & 
+- _docker run -p 8090:8090 flaskapi:latest &_ 
 
-**To Change the Port Number**
+>**To Change the Port Number**
 
-- flask run --host 0.0.0.0 --port 8090
+`Configure in Dockerfile`
 
-** Save the Image **
+- _flask run --host 0.0.0.0 --port 8090_
 
-docker save -o ./fask-ansible-docker.tar flaskapi:latest
+>**Save the Image**
 
-** Loand Docker Image** 
+- _docker save -o ./fask-ansible-docker.tar flaskapi:latest_
 
-docker load < fask-ansible-docker.tar
+>**Load Docker Image** 
 
-**To Find the process of Port**
+- _docker load < fask-ansible-docker.tar_
 
-lsof -P -i :8090
+>**To Find the process of Port**
 
-**References**
+_lsof -P -i :8090_
+
+>**References**
 
 - https://hackmd.io/@the-ansible-book/B1y5tXers
 
