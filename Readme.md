@@ -6,11 +6,11 @@
 
 >**To Run the app:**
 
-- _docker run -p 8090:8090 flaskapi:latest &_ 
+- _docker run -d -p 8090:8090 flaskapi:latest &_ 
 
 >**To Change the Port Number**
 
-`Configure in Dockerfile`
+`Update in Dockerfile`
 
 - _flask run --host 0.0.0.0 --port 8090_
 
@@ -21,6 +21,14 @@
 >**Load Docker Image** 
 
 - _docker load < fask-ansible-docker.tar_
+
+>**Stop Docker Container** 
+
+- _docker stop <<CONTAINER_ID>>_
+
+>**Start Docker Container** 
+
+- _docker start <<CONTAINER_ID>>_
 
 >**To Find the process of Port**
 
