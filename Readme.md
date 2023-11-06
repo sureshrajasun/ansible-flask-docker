@@ -6,7 +6,7 @@
 
 >**To Run the app:**
 
-- _docker run -d -p 8090:8090 flaskapi:latest &_ 
+- _docker run -d -p 8090:8090 flaskapi:latest_ 
 
 >**To Change the Port Number**
 
